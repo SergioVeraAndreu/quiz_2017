@@ -12,7 +12,7 @@ var Sequelize = require('sequelize');
 var url, storage;
 
 if (!process.env.DATABASE_URL) {
-    url = "postgres://rterbzyqrsnjea:74b0f792482e57be107bb9df473ae690a5be475e7c5c9dda49d95bb3e38daf68@ec2-23-21-224-199.compute-1.amazonaws.com:5432/da41g46rku8v83";
+    url = "sqlite:///";
     storage = "quiz.sqlite";
 } else {
     url = process.env.DATABASE_URL;
